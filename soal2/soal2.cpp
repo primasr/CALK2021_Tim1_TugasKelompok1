@@ -14,28 +14,21 @@ void encrypt(string text, int s)
     {
         result = "";
         x = 1;
-        for(int j=0; j < 4; j++){
+        for(int j=0; j < 5; j++){
             if (isupper(text[i])){
                 switch(x){
                     case 1:
-                        {
-                            //result += char(int(text[i]+s-65)%26 +65);
-                            huruf = int(text[i]-65);
-                            //huruf++;
-                                //printf("huruf %d,", huruf);
-                            huruf = (huruf+s)%26;
-                                //printf("%d\n", huruf);
+                        {                            
+                            huruf = int(text[i]-65);                                                            
+                            huruf = (huruf+s)%26;                                
                             result += ' ';
                             result += char(huruf+65);
                             x++;
                             break;
                         }
                     case 2:
-                        {
-                            //result += char(int(text[i]-s-65)%26 +65);
-                            huruf = int(text[i]-65);
-                            //huruf++;
-                                //printf("huruf %d,", huruf);
+                        {                            
+                            huruf = int(text[i]-65);                            
                             int temp2 = huruf-s;
                             if (temp2 > 0){
                                 huruf = (temp2)%26;
@@ -51,10 +44,8 @@ void encrypt(string text, int s)
                     case 3:
                         {
                             huruf = int(text[i]-65);
-                            huruf++;
-                                //printf("huruf %d,", huruf);
-                            huruf = (huruf*s)%26;
-                                //printf("%d\n", huruf);
+                            huruf++;                                
+                            huruf = (huruf*s)%26;                                
                             huruf--;
                             result += ' ';
                             result += char(huruf+65);
@@ -64,23 +55,34 @@ void encrypt(string text, int s)
                     case 4:
                         {
                             huruf = int(text[i]-65);
-                            huruf++;
-                                //printf("huruf %d,", huruf);
+                            huruf++;                                
                             temp = (float)huruf;
-                            huruf_float = temp/s;
-                                //printf("%f,", huruf_float);
-                            huruf = (int(ceil(huruf_float))%26);
-                                //printf("%d\n", huruf);
+                            huruf_float = temp/s;                                
+                            huruf = (int(ceil(huruf_float))%26);                                
                             huruf--;
                             result += ' ';
+                            result += char(huruf+65);
+                            x++;
+                            break;
+                        }
+                    case 5:
+                        {
+                            huruf = int(text[i]-65);
+                            temp = (float)huruf;
+                            huruf_float = temp/s;
+                            huruf = (int(floor(huruf_float))%26);                                
+                            huruf--;
+                            result += ' ';
+                            if (huruf < 0){
+                                huruf = 26+huruf;
+                            }
                             result += char(huruf+65);
                             x = 1;
                             break;
                         }
                 }
             }
-        }
-        //cout << text[i] << "," << i+1 << ": " << result << endl;
+        }        
         cout << text[i] << ": " << result << endl;
     }
 }
@@ -101,6 +103,6 @@ int main () {
     cout << "Ini Kapital nya: " << kapital << endl << endl;
 
     encrypt(kapital,2);
-  
+    
     return 0;
 }
