@@ -11,11 +11,16 @@ Abang Zhong sedang bekerja part time di WFP, dia disuru boss nya untuk membuat u
 membuat rangkaian lampu yang memiliki 3 pola yang di atur dengan 3 tombol yang berbeda.
 Komponen yang disediakan boss nya adalah sebagai berikut;
 
-· 3 tombol pushbutton,
-· 3 lampu led,
-· 2 breadboard,
-· 1 Arduino UNO,
+· 3 tombol pushbutton
+
+· 3 lampu led
+
+· 2 breadboard
+
+· 1 Arduino UNO
+
 · Kabel jumper dan resistor secukupnya.
+
 
 Rancangan dan pola yang disuruh adalah sebagai berikut:
 a. Terdapat 3 Lampu; kiri, tengah, dan kanan.
@@ -27,6 +32,7 @@ dan berganti hanya lampu tengah menyala.
 e. Apabila Tombol 3 ditekan maka lampu dari kanan ke kanan ke kiri akan
 menyala secara berurutan dan mati dari kiri ke kanan secara berurutan.
 
+
 Bantulah babang Zhong mengerjakan tugas dari boss nya dengan mebuat rangakaian dan juga
 kodingan agar dia tidak di pecat dari WFP! :]
 
@@ -35,11 +41,16 @@ kodingan agar dia tidak di pecat dari WFP! :]
 
 pada kesempatan kali ini kami menggunakan platform tinkercad untuk membuat prototype yang diminta. komponen yang kami gunakan adalah sebagai berikut :
 
-· 3 tombol pushbutton,
-· 3 lampu led,
-· 1 breadboard,
-· 1 Arduino UNO,
+· 3 tombol pushbutton
+
+· 3 lampu led
+
+· 1 breadboard
+
+· 1 Arduino UNO
+
 · Kabel jumper dan resistor secukupnya.
+
 
 
 
