@@ -56,7 +56,9 @@ pada kesempatan kali ini kami menggunakan platform tinkercad untuk membuat proto
 
 rangkaian : 
 
-((photo rangkaian))
+<p>
+  <img src="https://user-images.githubusercontent.com/73151849/118480818-ef8f5180-b73c-11eb-9306-c8bbef9d8113.png" width="350">  
+</p>
 
 source code : 
 ```sh
@@ -87,67 +89,52 @@ void loop()
   button2Value = digitalRead(button2);
   button3Value = digitalRead(button3);
   
-  	if(button1Value != 0)
-    {
-       digitalWrite(red, HIGH);
-      digitalWrite(blue, HIGH);
-      digitalWrite(green, HIGH);
-      delay(2000);
-      digitalWrite(red, LOW);
-      digitalWrite(blue, LOW);
-      digitalWrite(green, LOW);
-      	delay(2000);
-      
-      
-      
-     
-     
-    }
-  	
-  if(button2Value != 0)
-    {
+  if(button1Value != 0)
+  {
     digitalWrite(red, HIGH);
-      digitalWrite(blue, HIGH);
-      delay(2000);
-      	digitalWrite(green, HIGH);
-      digitalWrite(red, LOW);
-      digitalWrite(blue, LOW);
-      	delay(2000);
-      	
-      	
-      
-      
-    }
-  	else
-    {
-     	 digitalWrite(green, LOW);
-     
-      
-    }
-  if(button3Value != 0)
-    {
-    digitalWrite(red, HIGH);
-     delay(1000);
+    digitalWrite(blue, HIGH);
     digitalWrite(green, HIGH);
-     delay(1000);
-      digitalWrite(blue, HIGH);
-      delay(1000);
-      
+    delay(2000);
+    digitalWrite(red, LOW);
+    digitalWrite(blue, LOW);
+    digitalWrite(green, LOW);
+    delay(2000);
+  }
+
+  if(button2Value != 0)
+  {
+    digitalWrite(red, HIGH);
+    digitalWrite(blue, HIGH);
+    delay(2000);
+    digitalWrite(green, HIGH);
+    digitalWrite(red, LOW);
+    digitalWrite(blue, LOW);
+    delay(2000);
+  }
+  else
+  {
+     digitalWrite(green, LOW);
+  }
+  
+  if(button3Value != 0)
+  {
+    digitalWrite(red, HIGH);
+    delay(1000);
+    digitalWrite(green, HIGH);
+    delay(1000);
+    digitalWrite(blue, HIGH);
+    delay(1000);    
     digitalWrite(blue, LOW);
     delay(1000);
     digitalWrite(green, LOW);
-     delay(1000);
-      
-      	
-      	
-      
-      
-    }
-  	else
-    {
-     	digitalWrite(red, LOW);
-      	delay(1000);
-     
-      
-    }
+    delay(1000);
+  }
+  else
+  {
+    digitalWrite(red, LOW);
+    delay(1000);
+  }
+  
+  
+}
   ```
