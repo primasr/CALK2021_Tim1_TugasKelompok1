@@ -65,6 +65,7 @@ source code :
 int button1Value = 0;
 int button2Value = 0;
 int button3Value = 0;
+//menset nilai tombol = 0
 
 int button1 = 3;
 int button2 = 4;
@@ -73,7 +74,9 @@ int button3 = 5;
 int red = 2;
 int green = 6;
 int blue = 7;
+
 //mendeklarasikan input/output dengan pin yang digunakan
+
 
 
 void setup()
@@ -83,10 +86,10 @@ void setup()
   pinMode(blue, OUTPUT);
   pinMode(button1, INPUT);
   pinMode(button2, INPUT);
-  pinMode(button3, INPUT);
+  pinMode(button3, INPUT); //menjelaskan mana yang input/output
 }
 
-//menjelaskan mana yang input/output
+
 void loop()
 {
   button1Value = digitalRead(button1);
