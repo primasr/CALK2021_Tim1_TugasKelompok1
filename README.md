@@ -33,6 +33,16 @@ kodingan agar dia tidak di pecat dari WFP! :]
 
 ###Cara mengerjaan :
 
+pada kesempatan kali ini kami menggunakan platform tinkercad untuk membuat prototype yang diminta. komponen yang kami gunakan adalah sebagai berikut :
+
+· 3 tombol pushbutton,
+· 3 lampu led,
+· 1 breadboard,
+· 1 Arduino UNO,
+· Kabel jumper dan resistor secukupnya.
+
+
+
 rangkaian : 
 
 ((photo rangkaian))
