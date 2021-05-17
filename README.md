@@ -31,7 +31,7 @@ Bantulah babang Zhong mengerjakan tugas dari boss nya dengan mebuat rangakaian d
 kodingan agar dia tidak di pecat dari WFP! :]
 
 
-###Cara mengerjaan :
+### Cara mengerjaan :
 
 pada kesempatan kali ini kami menggunakan platform tinkercad untuk membuat prototype yang diminta. komponen yang kami gunakan adalah sebagai berikut :
 
