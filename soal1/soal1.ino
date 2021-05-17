@@ -21,7 +21,7 @@ void setup()
 
 void loop()
 {
-	button1Value = digitalRead(button1);
+  button1Value = digitalRead(button1);
   button2Value = digitalRead(button2);
   button3Value = digitalRead(button3);
   
