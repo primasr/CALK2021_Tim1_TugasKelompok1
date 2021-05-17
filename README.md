@@ -69,9 +69,12 @@ int button3Value = 0;
 int button1 = 3;
 int button2 = 4;
 int button3 = 5;
+
 int red = 2;
 int green = 6;
 int blue = 7;
+//mendeklarasikan input/output dengan pin yang digunakan
+
 
 void setup()
 {
@@ -83,25 +86,26 @@ void setup()
   pinMode(button3, INPUT);
 }
 
+//menjelaskan mana yang input/output
 void loop()
 {
   button1Value = digitalRead(button1);
   button2Value = digitalRead(button2);
   button3Value = digitalRead(button3);
-  
-  if(button1Value != 0)
+  //melaukan set pada nilai tombol
+  if(button1Value != 0) //men set keadaan saat nilai pada tombol 1 berubah
   {
-    digitalWrite(red, HIGH);
+    digitalWrite(red, HIGH); //menyalakan lampu
     digitalWrite(blue, HIGH);
     digitalWrite(green, HIGH);
-    delay(2000);
-    digitalWrite(red, LOW);
+    delay(2000); //memberi delay hingga perintah berikutnya 
+    digitalWrite(red, LOW); //mematikan lampu
     digitalWrite(blue, LOW);
     digitalWrite(green, LOW);
     delay(2000);
   }
 
-  if(button2Value != 0)
+  if(button2Value != 0) //men set keadaan saat nilai pada tombol 2 berubah
   {
     digitalWrite(red, HIGH);
     digitalWrite(blue, HIGH);
@@ -116,7 +120,7 @@ void loop()
      digitalWrite(green, LOW);
   }
   
-  if(button3Value != 0)
+  if(button3Value != 0) //men set keadaan saat nilai pada tombol 3 berubah
   {
     digitalWrite(red, HIGH);
     delay(1000);
@@ -138,6 +142,13 @@ void loop()
   
 }
   ```
+  
+  ## B. Kendala Soal 1
+1. saat ada lebih dari 1 tombol dinyalakan, akan terjadi crash perintah 
+
+## C. Kritik dan Saran Soal 1
+1. tidak ada 
+  
 
 # Soal 2 Cyber Security
 
